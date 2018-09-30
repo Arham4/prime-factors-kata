@@ -16,6 +16,8 @@ class PrimeFactorsTest {
         assertThat(factorsOf(7), `is`(listOf(7)))
         assertThat(factorsOf(8), `is`(listOf(2, 2, 2)))
         assertThat(factorsOf(9), `is`(listOf(3, 3)))
+        assertThat(factorsOf(2 * 2 * 3 * 3 * 5 * 7 * 11 * 11 * 13),
+                `is`(listOf(2, 2, 3, 3, 5, 7, 11, 11, 13)))
     }
 
     private fun factorsOf(n: Int): List<Int> {
